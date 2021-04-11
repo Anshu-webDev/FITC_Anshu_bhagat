@@ -15,26 +15,25 @@ def productBuySell(price, n):
 	
 	
 	i = 0
-	while (len(price)):
+	while (i < n-1):
 
 
-		while (price[i] and ___):
+		while (price[i] > price[i+1] and i < n-1):
 			i += 1
 
 
-		if (i == n - 1):
+		if price[i] < price[i+1]:
+
+			# Store the index of minima
+			buy = i
+		i += 1
 
 
-		# Store the index of minima
-		buy =
-		i =
-
-
-		while (___ and ___):
+		while (i < n-1 and price[i]<price[i+1]):
 			i += 1
 
 		# Store the index of maxima
-		sell =
+		sell = i
 
 		print("Buy on day: ",buy,"\t",
 				"Sell on day: ",sell)
